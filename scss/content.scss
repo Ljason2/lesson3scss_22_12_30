@@ -1,0 +1,174 @@
+
+// content
+@use './variable.scss' as *;
+@import './mixin.scss'; 
+
+
+article{
+    width: $content;
+    // margin: 0 auto;
+    @include width($bottom:0);
+    padding: $source*8 0;
+
+    h3{ 
+
+        font:{
+            size:$source *3;
+            weight:bold;
+        };
+        margin-bottom: $source*7;
+        text-align: center;
+    }
+
+    // 버튼파트
+    > .btn{
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        @include layout($flexstart:center);
+        margin-bottom: $size-large;
+
+
+        p{
+            font-size: $size-normal;
+            color: $sub;
+
+            b{
+                font-weight: normal;
+            }
+            
+        }
+
+        > div{
+            width: $source*19;
+            position: relative;
+            border: 1px solid $sub;
+            border-radius: 18px;
+            font-size:  $size-normal;
+
+            p{
+                line-height: 36px;
+                text-indent: $size-large;
+            }
+
+            ul{
+                position: absolute;
+                width: $source*13;
+                top: 45px;
+                left: $size-large;
+                border: 1px solid $sub;
+                display: none;
+
+                li{
+                    line-height: 25px;
+                    border: 1px solid $sub;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // .gallery
+
+    .gallery{
+        width: $content;
+        // margin: 0 auto;
+        // display: flex;
+        flex-wrap:wrap ;
+        // justify-content: space-between;
+        @include width($bottom:0);
+        @include layout;
+    
+        > figure{
+            width: $source*27;
+            margin-bottom: $size-large;
+            position: relative;
+            padding-bottom: $source;
+    
+    
+    
+            > img{
+                margin-bottom:$source;
+            }
+            
+            dl{
+            .title{
+
+                font:{
+                    size:$size-normal;
+                    weight:bold;
+                };
+                margin-bottom: $source;
+                text-align: center;
+            }
+    
+
+            .price{
+                text-align: center;
+                margin-bottom:$source;
+    
+                ins{
+                    color: $red;
+                    font-size: $size-normal;
+                
+                }
+    
+                del{
+                    color: $sub;
+                    font-size:  $size-normal;
+                }
+            }
+
+
+            .btn{
+                // display: flex;
+                // justify-content: space-between;
+                @include layout($flexstart:stretch);
+                > .add{
+                    width: $source*13;
+                    height: 36px;
+                    color: $sub;
+                    border: 1px solid $sub;
+                    border-radius: 18px;
+                }
+    
+                > div{
+                
+                .fav{
+                    @include btn;
+                    }
+    
+                    .link{
+                        @include btn;
+                    }
+                }
+            }
+
+            .label{
+                position: absolute;
+                right:$source;
+                bottom: $source*15;
+        
+                > b{
+                width:$source*5;
+                border-radius: 50%;
+                color: white;
+                background-color: $red;
+                display: block;
+                line-height: $source*5;
+                font-size:  12px;
+                text-align: center;
+                }
+                 }
+           }
+        }
+    }
+}
+
+
+
+
+

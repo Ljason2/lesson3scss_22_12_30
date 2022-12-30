@@ -1,0 +1,100 @@
+@use './variable.scss' as *;
+@import './mixin.scss'; 
+
+
+
+
+/* #bottom */
+
+#bottom{
+    padding:72px 0 42px;
+    background-color: $back;
+
+}
+
+
+// aside
+
+aside{
+    width: $content;
+    // margin: 0 auto 64px;
+    @include width($bottom:64px);
+    display: flex;
+    flex-wrap: wrap;
+
+    > dl{
+        width: 25%;
+        /* font-size: 9px; */
+
+        dt{
+
+            font:{
+                size:$size-normal;
+                weight: bolder;
+            }
+            color: $main;
+            margin-bottom: $size-large;
+            letter-spacing: 3px;
+            span{
+                padding-bottom: $source;
+                border-bottom: 1px solid #3d3d3d;
+            }
+            }
+
+            dd{
+                font-size:$size-normal;
+                color: $sub;
+                line-height: 25px;
+
+                a{
+                    color: $sub;
+                }
+
+                address{
+                    font:{
+                        size:$size-normal;
+                        weight:bold;
+                        style:normal;
+                    }
+
+                    line-height: 27px;
+                    margin-bottom: $size-large;
+                    padding-right:$size-source*5;
+                    color: $main;
+                    letter-spacing: 1.5px;
+                }
+            }
+    }
+}
+
+
+
+// footer
+footer{
+    width: $content;
+    @include width($bottom:0);
+    @include layout($flexstart:center);
+    flex-direction: row-reverse;
+
+    ul{
+        display: flex;
+
+        li{
+            margin: 0 $source;
+        }
+        }
+
+        small{
+            font-size: $size-normal;
+            color: $sub;
+        }
+        
+}
+
+    
+
+
+
+
+
+

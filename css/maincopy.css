@@ -1,0 +1,380 @@
+/*  공통정보  */
+
+
+/* color: 
+
+배경: #fafafa
+폰트: #3d3d3d(진한 것), #aaaaaa(흐린 것)
+#ca7379(빨간색)
+#ffffff(흰색)
+*/ 
+
+/* size:  ;
+1170px
+100%
+작은 폰트: 
+         9px
+         12px
+       30px
+ */
+
+
+ .hide{
+    width: 0; height: 0;
+    font-size: 0; line-height: 0;
+    position:absolute;
+    visibility: hidden;
+     }
+    
+    
+    
+     /* header */
+    
+     header{
+        padding:70px 0 25px;
+        background-color: #fafafa;
+        position: relative;
+     }
+    
+     header>div.bottom{
+        width: 1170px;
+        margin: 0 auto;
+        /* background-color: pink; */
+     }
+    
+     header>div.bottom>h1{
+        text-align: center;
+        margin-bottom: 35px;
+     }
+    
+    
+     nav{
+        display: flex;
+        justify-content: center;
+     }
+    
+     nav>ul{
+        display: flex;
+     }
+    
+    nav>ul>li{
+        margin:0 25px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    nav>ul>li>a{
+    font-size: 12px;
+    color: #3d3d3d;
+    }
+    
+     header>div.top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #aaaaaa;
+     }
+    
+    nav>p.button>i{
+        color:#3d3d3d;
+        font-size: 10px;
+    }
+    
+    
+     header>div.top>p{
+        width: 1170px;
+        margin: 0 auto;
+     }
+    
+     header>div.top>p>a{
+        font-size: 9px;
+        color: #aaaaaa;
+        line-height: 40px;
+     }
+    
+    
+    
+     header>.bottom>nav>ul>li>span{
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color:transparent;
+    transition: all 0.5s;
+    left: 0; bottom: 0;
+    }
+    
+    header>.bottom>nav>ul>li:hover>span{
+    background-color: #3d3d3d;
+    }
+    
+    
+    
+    
+    article{
+        width: 1170px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+    
+    article>h3{
+        font-size: 30px;
+        margin-bottom: 70px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    article>.btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    
+    article>.btn>p{
+        font-size: 12px;
+        color: #aaaaaa;
+    }
+    
+    article>.btn>p>b{
+        font-weight: normal;
+    }
+    
+    
+    article>.btn>div{
+        width: 190px;
+        padding: 15px 0 15px;
+        position: relative;
+        border: 1px solid #aaaaaa;
+        border-radius: 18px;
+        font-size: 12px;
+    }
+    
+    article>.btn>div>p{
+        line-height: 36px;
+        text-indent: 30px;
+    }
+    
+    article>.btn>div>ul{
+        position: absolute;
+        width: 130px;
+        top: 45px;
+        left: 30px;
+        border: 1px solid #aaaaaa;
+        display: block;
+        z-index: 1000;
+    }
+    
+    article>.btn>div>ul>li{
+        line-height: 25px;
+        border: 1px solid #aaa;
+    
+    }
+    
+    article>.btn>div>ul>li:last-child{
+        border-bottom: none;
+    }
+    
+    /* article>.btn>ul>li{
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    display: none;
+    }
+    
+    article>.btn>ul>li:first-child{
+        display: block;
+    }
+     */
+    
+    .gallery{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: space-between;
+    }
+    
+    .gallery>figure{
+        width: 270px;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    
+    .gallery .title{
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .gallery>figure>figcaption>dl>.price{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .gallery .price>ins{
+        color: #ca7379;
+        font-size: 12px;
+    
+    }
+    
+    .gallery .price>del{
+        color: #aaaaaa;
+        font-size: 12px;
+    }
+    
+    .gallery>figure>figcaption>dl>.btn{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .gallery>figure>figcaption>dl>.btn .add{
+        width: 130px;
+        height: 36px;
+        color: #3d3d3d;
+        border: 1px solid #aaaaaa;
+        border-radius: 18px;
+    }
+    
+    .gallery .btn div{
+    
+    }
+    
+    .gallery>figure>figcaption>dl>.btn .fav{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    color: #aaaaaa;
+    }
+    
+    .gallery .btn .link{
+        width: 36px;
+        height: 36px;
+        border: 1px solid #aaa;
+        border-radius: 50%;
+        color: #aaa;
+    }
+    
+    
+    .gallery .label{
+        position: absolute;
+        right: 10px;
+        bottom: 150px;
+    }
+    
+    
+    .gallery .label>b{
+        width: 50px;
+        /* height: 36px; */
+        /* border: 1px solid #aaa; */
+        border-radius: 50%;
+    color: white;
+    background-color: #ca7379;
+    display: block;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    }
+    
+    /* figure 전체 */
+    
+    .gallery figure>img{
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    /* #bottom */
+    
+    #bottom{
+        padding:72px 0 42px;
+        background-color: #fafafa;
+    }
+    
+    
+    #bottom>aside{
+        width: 1170px;
+        margin: 0 auto 64px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #bottom>aside>dl{
+        width: 25%;
+        /* font-size: 9px; */
+    }
+    
+    
+    #bottom>aside>dl>dt{
+    font-size: 12px;
+    color: #3d3d3d;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    }
+    
+    
+    #bottom>aside>dl>dt>span{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #3d3d3d;
+    }
+    
+    #bottom>aside>dl>dd{
+        font-size: 12px;
+        color: #aaa;
+        line-height: 25px;
+    }
+    
+    #bottom>aside>dl>dd>a{
+        color: #aaa;
+    }
+    
+    aside>dl>dd>address{
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 27px;
+        margin-bottom: 30px;
+        padding-right:50px;
+        font-style: normal;
+        color: #3d3d3d;
+        letter-spacing: 1.5px;
+    }
+    
+    
+    #bottom>footer{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #bottom>footer>ul{
+        display: flex;
+        }
+        
+    
+        #bottom>footer>ul>li{
+            margin: 0 10px;
+        }
+        
+    #bottom>footer>small{
+        font-size: 12px;
+        color: #aaa;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
